@@ -1,4 +1,4 @@
-package org.hyeondo.servlets.examples;
+package org.hyeondo.servlets.chap11.servlets;
 
 import java.io.IOException;
 
@@ -8,19 +8,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/hello")
-public class HelloServlet extends HttpServlet {
+@WebServlet("/main")
+public class MainServlet extends HttpServlet {
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		//데이터 만듦
-		String name = "이현도";
-		
-		//데이터를 리퀘스트에 태운다
-		request.setAttribute("name",  name);
-		
-		//jsp로 포워드한다
-		request.getRequestDispatcher("/WEB-INF/jsp/hello.jsp").forward(request, response);
-		
-	}
+		request.getRequestDispatcher("/WEB-INF/jsp/main.jsp").forward(request,
+				response);
+}
 }
