@@ -70,5 +70,5 @@ public class MemberDaoImpl implements MemberDao{
 				return rs.getInt("count");
 			}
 		});
-}
+	}
 }

@@ -59,5 +59,5 @@ public class MemberListServlet extends HttpServlet {
 		request.setAttribute("members", memberList);
 		request.getRequestDispatcher("/WEB-INF/jsp/members.jsp")
 				.forward(request, response);
-}
+	}
 }

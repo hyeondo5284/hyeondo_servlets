@@ -15,5 +15,5 @@ public class MainServlet extends HttpServlet {
 			throws ServletException, IOException {
 		request.getRequestDispatcher("/WEB-INF/jsp/main.jsp").forward(request,
 				response);
-}
+	}
 }
