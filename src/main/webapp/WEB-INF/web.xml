@@ -24,7 +24,7 @@
 	</servlet-mapping>
 
 	<error-page>
-		<location>/e/error.jsp</location>
+		<location>/error.jsp</location>
 	</error-page>
 
 	<welcome-file-list>
